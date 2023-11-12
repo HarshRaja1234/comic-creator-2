@@ -9,8 +9,8 @@ Using the Comic Generator, anyone can make and share cool 10-panel comic strips 
 
 ## API Reference
 
-# Comic Creator API Reference
-# Comic Panel Generator
+### Comic Creator API Reference
+#### Comic Panel Generator
 
 This project utilizes the Hugging Face API for generating comic panels. The `query` function in the `script2.js` file is responsible for fetching the API. Here's how you can use it:
 
