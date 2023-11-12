@@ -1,0 +1,130 @@
+body {
+    background-color:#222222;
+    color: #ffffff;
+    font-family: sans-serif;
+    background-image: url('dragonball.jpeg');
+  }
+
+  .container {
+    width: 800px;
+    background-color: #121212;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    color:rgb(166, 243, 216)
+  }
+
+  .desc {
+    text-align: center;
+    color:#fff;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 55px;
+  }
+
+h2 {
+    color: #ffffff;
+}
+
+  form {
+    margin-top: 20px;
+  }
+
+  .panel-input {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    background-color: #1E90ED;
+    color: #ffffff;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #63ADF2;
+  }
+
+  #comic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .panel {
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    border: 1px solid #ffffff;
+  }
+
+  .panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #loading {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#loading img {
+    width: 200px;
+}
+
+  .hidden {
+    display: none;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px 0;
+    font-size: 40px;
+    text-align: center;
+    background-color: #222222;
+    border-radius: 10px;
+  }
+
+  .nav li {
+    color: #fff;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 25px;
+  }
+
+ .nav a {
+    color: rgb(255, 255, 255);
+}
+
+.nav a:active {
+    color: rgb(55, 55, 231);
+}
+
+.nav a:hover {
+    color:#63ADF2;
+    outline: none;
+}
+
+.navdet {
+  font-size: 15px;
+  padding: 0px;
+}
+
+hr {
+    margin: 20px 10px;
+}

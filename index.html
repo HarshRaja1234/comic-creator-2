@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comic Creator</title>
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <script src="https://kit.fontawesome.com/183914ec13.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <style>
+    /* Your existing styles */
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      opacity: 0;
+      animation: fadeIn 1.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animated-text {
+      opacity: 0;
+      animation: fadeInText 1.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeInText {
+      0% {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Additional styles for responsiveness */
+    @media screen and (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      .nav {
+        font-size: 1.2em;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .container {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 1.2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      .nav {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container animated-text">
+    <h1><i class="fas fa-paint-brush"></i>Comic Creator</h1>
+    <p>Using the Comic Creator, anyone can make and share cool 10-panel comic strips in a simple interface. It works by using a special tool that turns text into pictures. So, when you write a story, this tool transforms it into awesome comic panels.</p>
+    <p>If you leave a panel empty (without writing anything), it will show a message saying 'Panel text is empty' for that specific panel.</p>
+  </div>
+
+  <form id="comic-form">
+    <h2>Enter Text for Each Panel:</h2>
+    <div id="loading" class="hidden">
+      <img src="loading1.svg" alt="Loading...">
+      <p>Generating Comic...</p>
+    </div>
+    <div id="comic"></div>
+    <button type="button" id="generate-button">Generate</button>
+  </form>
+
+  <div id="comic-results"></div>
+
+  <nav class="nav">
+    About me
+    <div class="navdet" id="navbarNav">
+      <p>Myself Harsh Bamniya, M.Tech 2nd Year (Infrastructure Systems) Centre for Transportation Systems IIT Roorkee</p>
+      <p>Feel free to contact me via:</p>
+      <ul class="navit">
+        <li class="navi">
+          <a class="nav-link" href="https://www.linkedin.com/in/harsh-bamniya-622303116/?originalSubdomain=in" target="blank"><i class="fab fa-linkedin"></i>Linkedin</a>
+        </li>
+        <li class="navi">
+          <a class="nav-link" href="https://github.com/HarshRaja1234" target="blank"><i class="fab fa-github"></i> Github</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <script src="script2.js"></script>
+</body>
+</html>
