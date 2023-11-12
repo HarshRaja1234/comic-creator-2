@@ -52,7 +52,7 @@ script2.js: The JavaScript file that encompasses the logic for retrieving data f
 ## How to use this
 
 
-1.Follow the provided link to access the deployed project.[link]()
+1.Follow the provided link to access the deployed project.[link](https://harshraja1234.github.io/comic-creator-2/)
 
 2.Utilize the input form to input text for each of the ten comic panels.
 
